@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: webhooks-telegram-bot
+  ai:
+    openai:
+      api-key: YOUR-API-KEY
+      base-url: https://api.proxyapi.ru/openai # URL к API AI чат-бота
+      chat:
+        options:
+          model: gpt-3.5-turbo-1106 # Модель чат-бота
+    retry:
+      max-attempts: 1 # Кол-во повторных запросов к API в случае ошибки
+telegram:
+  bot:
+    token: YOUR-TELEGRAM-BOT-TOKEN
+  webhook:
+    url: YOUR-URL
